@@ -1,14 +1,14 @@
 type AppointmentData = {
   id: number;
   name: string;
-  gender: "Male" | "Female";
+  gender?: "Male" | "Female";
   age: number;
-  email: string;
-  problem: string;
-  bookingDate: string;
-  bookingTime: string;
-  package: string;
-  status: "Completed" | "Pending" | "Cancelled";
+  email?: string;
+  problem?: string;
+  bookingDate?: string;
+  bookingTime?: string;
+  package?: string;
+  status?: "Completed" | "Pending" | "Cancelled";
 };
 
 interface ViewAppointmentProps {

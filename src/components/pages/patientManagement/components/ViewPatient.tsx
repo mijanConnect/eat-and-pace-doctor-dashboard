@@ -7,15 +7,20 @@ import { X, Send, Image as ImageIcon } from "lucide-react";
 
 type PatientData = {
   id: number;
+  serial?: string;
   name: string;
   gender: "Male" | "Female";
   age: number;
-  email: string;
   problem: string;
-  bookingDate: string;
-  bookingTime: string;
-  package: string;
-  status: "Completed" | "Pending" | "Cancelled";
+  nutrition?: string;
+  fitnessLevel?: string;
+  healthCondition?: string;
+  overallScore?: string;
+  email?: string;
+  bookingDate?: string;
+  bookingTime?: string;
+  package?: string;
+  status?: "Completed" | "Pending" | "Cancelled";
 };
 
 interface ViewPatientProps {
